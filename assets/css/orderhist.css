@@ -1,0 +1,272 @@
+h1 {
+  color: rgb(255,192,61);
+}
+
+.text-left {
+  text-align: left!important;
+}
+
+#button {
+  width: 16.65%;
+  align-items: center;
+}
+
+#purchase-tab {
+  display: flex;
+  justify-content: center;
+}
+
+#srch {
+  background: #eaeaea;
+  padding: 1px 0;
+  border: medium none;
+  display: inline-flex;
+}
+
+#purchase-srch {
+  background: #eaeaea;
+  padding: 12px 0;
+}
+
+.fa.fa-search {
+  margin: 0 15px;
+}
+
+#purchase {
+  display: flex;
+  align-content: center;
+  overflow-x: scroll;
+}
+
+#seller-name {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  margin: 0 6px 0 0;
+}
+
+#chat-button {
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+.material-icons {
+  margin: 0 1px 0 0;
+}
+
+.far.fa-question-circle {
+  margin: 0 10px 0 0;
+  display: inline-block;
+}
+
+#completed {
+  font-size: 14px;
+  display: inline-block;
+}
+
+#chat-button {
+  display: inline-block;
+}
+
+#sell-name {
+  display: inline-block;
+}
+
+#status-wrapper {
+  display: inline-block;
+  float: right;
+}
+
+#order-content-header {
+  display: inline-block;
+  background-color: #ffc03d;
+}
+
+#drawer {
+  display: inline-block;
+}
+
+#item-product {
+  padding: 10px 0;
+  display: inline-block;
+}
+
+#order-price {
+  display: inline-block;
+  justify-content: center;
+  float: right;
+}
+
+#order-price-text {
+  padding: 22px 20px 22px 20px;
+  text-align: right;
+  float: right;
+}
+
+.icon.ion-social-angular {
+  margin: 0 5px 0 0;
+  color: #ee4d2d;
+}
+
+#label-price {
+  margin: 0 10px 0 0;
+}
+
+#dis {
+  color: #ee4d2d;
+}
+
+#total {
+  color: #ee4d2d;
+  font-size: 30px;
+}
+
+#totals {
+  padding: 30px 0 0 0;
+  text-align: right;
+}
+
+#chat-buttons {
+  background: #00bfa5;
+}
+
+#order-detail-container {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  justify-content: center;
+}
+
+#button-content {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#order-detail-button {
+  padding: 0 10px;
+  background: #fff;
+  border-color: #c4c4c4;
+  float: right;
+}
+
+#order-detail-wrapper {
+  display: inline-block;
+}
+
+#text-info {
+  align-items: center;
+  float: left;
+  padding: 10px 0;
+  display: inline-block;
+}
+
+#checkout {
+  overflow: scroll;
+  height: 600px;
+}
+
+#rating {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+#tab:hover {
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: #ee4d2d;
+  background: #ffc03d;
+  margin-bottom: -3px;
+}
+
+#purchase {
+  display: flex;
+  justify-content: center;
+}
+
+#order-content, #order-container, #order-header-seller {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #c6c6c6;
+}
+
+#item-img {
+  display: inline-block;
+}
+
+#sell-ava {
+  padding: 5px 5px 5px 5px;
+}
+
+#purchase-label {
+  display: flex;
+  align-items: center;
+}
+
+#item-detail-content, #img-holder {
+  display: inline-block;
+}
+
+#tab {
+  border: 1px solid #c4c4c4;
+  background: #fff;
+}
+
+#all-view {
+  border: 1px solid #c4c4c4;
+}
+
+#order-content {
+  display: flex;
+  justify-content: center;
+}
+
+#img-wrapper {
+  display: flex;
+  justify-content: left;
+  float: left;
+}
+
+#item-names, #item-qty {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+#img-holder {
+  border: 0.5px solid #c4c4c4;
+}
+
+#ori {
+  text-decoration: line-through;
+}
+
+#text-info, #order-detail-wrapper {
+  display: inline-block;
+}
+
+#order-container {
+  padding: 0 0 10px 0;
+}
+
+#order-price-wrapper {
+  border-bottom: 3px solid #ffc03d;
+}
+
+#srch-col {
+  padding: 10px 0;
+}
+
+#item-detail {
+  display: flex;
+}
+
+#rate {
+}
+
+#order-detail-wrapper {
+  display: inline-block;
+}
+
+#order-total {
+  border-bottom: 1px solid #c4c4c4;
+}
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>MedD ver 1.2(1)</title>
+    <meta name="description" content="Your one stop medical experience">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Bold-BS4-Footer-Big-Logo-1.css">
+    <link rel="stylesheet" href="assets/css/Bold-BS4-Footer-Big-Logo.css">
+    <link rel="stylesheet" href="assets/css/button.css">
+    <link rel="stylesheet" href="assets/css/chatbox-1.css">
+    <link rel="stylesheet" href="assets/css/chatbox.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/dontdelete.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/orderhist.css">
+    <link rel="stylesheet" href="assets/css/Social-Icons.css">
+    <link rel="stylesheet" href="assets/css/style-1.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="d-md-flex login-clean1" style="padding: 25px;background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('assets/img/city%20building.jpg');background-size: cover;height: 100%;width: 100%;">
+    <div style="width: 100%;height: 100%;display: inline-flex;margin: 0 auto;justify-content: center;">
+        <form id="sign_in" class="login" method="post" style="height: 670px;">
+            <div><a class="text-left forgot" id="back" href="index.html" style="margin: 0px;margin-bottom: 10px;width: auto;height: auto;font-size: 13px;"><i class="fa fa-arrow-left" style="margin: 0;height: 16px;"></i>&nbsp; Back to home</a></div>
+            <h1 class="log.p"
+                style="font-size: 35px;">Log In</h1>
+            <div class="illustration"><i class="fa fa-user-circle" style="color: rgb(255,192,61);"></i></div>
+            <div class="form-group"><input class="form-control" type="email" id="email" name="email" placeholder="Email"><span class="error_message" name="" id="email_error"></span></div>
+            <div class="form-group"><input class="form-control" type="password" id="password" name="password" placeholder="Password"><span id="password_error" class="error_message" name=""></span></div>
+            <div class="form-group"><a class="btn btn-primary btn-block" role="button" id="existing_user" href="delivery.html" style="background-color: rgb(255,192,61);">Log In</a></div>
+            <div class="text-center" style="font-size: 30px;margin-bottom: 20px;"><i class="icon ion-social-google" id="google_sign_in" style="display: inline-block;width: 35px;height: 35px;cursor: pointer;background-color: #33383b;border-radius: 2px;font-size: 20px;color: #ffffff;text-align: center;line-height: 35px;margin-right: 5px;margin-bottom: 5px;"></i>
+                <i
+                    class="icon ion-social-facebook" id="facebook_sign_in" style="display: inline-block;width: 35px;height: 35px;cursor: pointer;background-color: #33383b;border-radius: 2px;font-size: 20px;color: #ffffff;text-align: center;line-height: 35px;margin-right: 5px;margin-bottom: 5px;"></i>
+            </div><a class="forgot" href="#" style="margin-bottom: 10px;">Forgot your email or password?</a>
+            <p class="text-center" style="margin: 0;">OR</p><a id="register_user" class="forgot" style="margin-bottom: 10px;">Don't have an account? Sign Up now!</a></form>
+        <form id="register" class="login w3-animate-right" method="post" style="display: none;height: 670px;">
+            <div><a class="text-left forgot" id="back" href="index.html" style="margin: 0px;margin-bottom: 10px;width: auto;height: auto;font-size: 13px;"><i class="fa fa-arrow-left" style="margin: 0;height: 16px;"></i>&nbsp; Back to home</a></div>
+            <h1 class="log.p"
+                style="margin-bottom: 15px;font-size: 35px;">Register</h1>
+            <div class="form-group"><input class="form-control" type="text" id="new_name" placeholder="Name"></div>
+            <div class="form-group"><input class="form-control" type="text" id="new_username" placeholder="Username"></div>
+            <div class="form-group"><input class="form-control" type="text" id="new_address" placeholder="Address"></div>
+            <div class="form-group"><input class="form-control" type="tel" id="new_phone" placeholder="Phone Number"></div>
+            <div class="form-group"><input class="form-control" type="email" id="new_email" name="email" placeholder="Email"><span id="new_email_error" class="error_message" name=""></span></div>
+            <div class="form-group"><input class="form-control" type="password" id="new_password" name="password" placeholder="Password"><span id="new_password_error" class="error_message" name=""></span></div>
+            <div class="form-group"><input class="form-control" type="password" id="new_rPassword" name="password" placeholder="Repeat password"><span id="rPassword_error" class="error_message" name=""></span></div>
+            <div class="form-group"><a class="btn btn-primary btn-block" role="button" id="new_user" href="" style="background-color: rgb(255,192,61);">Register</a></div><a id="sign_in_user" class="forgot" style="margin-bottom: 20px;">Already have an account? Login now!</a></form>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-storage.js"></script>
+    <script src="assets/js/firebase_config.js"></script>
+    <script src="assets/js/delivery.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/login.js"></script>
+    <script src="assets/js/medic.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/profile.js"></script>
+    <script src="assets/js/reward.js"></script>
+</body>
+
+</html>

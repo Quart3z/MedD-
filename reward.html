@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Menu - MEDD</title>
+    <meta name="description" content="Your one stop medical experience">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Bold-BS4-Footer-Big-Logo-1.css">
+    <link rel="stylesheet" href="assets/css/Bold-BS4-Footer-Big-Logo.css">
+    <link rel="stylesheet" href="assets/css/button.css">
+    <link rel="stylesheet" href="assets/css/chatbox-1.css">
+    <link rel="stylesheet" href="assets/css/chatbox.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/dontdelete.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/orderhist.css">
+    <link rel="stylesheet" href="assets/css/Social-Icons.css">
+    <link rel="stylesheet" href="assets/css/style-1.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md sticky-top shadow" style="display: flex;align-items: center;justify-content: center;">
+        <div class="container" style="margin: 0px; padding-left: 50px; padding-right: 50px;">
+            <div href="menu.html"><img src="assets/img/meddhalf.png"><a class="navbar-brand" href="delivery.html">MedD</a></div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item d-md-flex align-items-md-center" role="presentation" style="border-left: 2px solid rgba(127,127,127,0.1);padding: 0 5px 0 5px;"><i class="fa fa-gift" style="font-size: 25px;color: rgb(255,192,61);"></i><a class="nav-link" style="cursor: pointer;font-size: 15px;" href="reward.html">&nbsp;Rewards</a></li>
+                        <li class="nav-item d-md-flex align-items-md-center"
+                            role="presentation" style="border-left: 2px solid rgba(127,127,127,0.1);padding: 0 5px 0 5px;"><i class="fa fa-shopping-cart" style="font-size: 25px;color: rgb(255,192,61);"></i><a class="nav-link d-md-flex align-items-md-center" style="cursor: pointer;font-size: 15px;" href="order%20history.html">&nbsp; Orders</a></li>
+                        <li
+                            class="nav-item d-md-flex align-items-md-center" role="presentation" style="border-left: 2px solid rgba(127,127,127,0.1);padding: 0 5px 0 5px;"><i class="fa fa-user" style="font-size: 25px;color: rgb(255,192,61);"></i><a class="nav-link" id="profile_name" style="cursor: pointer;font-size: 15px;" href="profile.html">&nbsp;</a></li>
+                            <li class="nav-item d-md-flex align-items-md-center"
+                                role="presentation" style="border-left: 2px solid rgba(127,127,127,0.1);padding: 0 5px 0 5px;"><a class="nav-link text-right float-left d-md-flex" id="logout_btn" style="cursor: pointer;font-size: 15px;" href="index.html">Log Out</a></li>
+                    </ul>
+                </div>
+            </div><button data-target="#navcol-1" data-toggle="collapse" class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button></div>
+    </nav>
+    <div style="display: flex;flex-direction: column;padding: 50px 10% 0 10%;">
+        <div class="d-flex flex-column" style="align-self: start;margin-bottom: 20px;width: 90%;">
+            <h1 class="text-left" style="padding: 1px 0;margin-top: 4px;float: left;margin-right: 10px;">Rewards&nbsp;</h1>
+            <div><img id="reward_medal" style="width: 24px;height: 24px;margin-right: 10px;">
+                <h4 id="reward_ranking"></h4>
+            </div>
+        </div>
+        <div class="shadow-sm" style="display: flex;width: 90%;align-items: center;margin-bottom: 30px;justify-content: center;"><input type="text" placeholder="Search for rewards..." style="width: 90%;padding-left: 10px;margin-right: 1.5%;border: none;border-right: 1.5px solid rgba(127,127,127,0.34);"><button class="btn btn-primary border-white" type="button" style="background-color: rgba(0,123,255,0);display: inline-block;align-items: center;justify-content: center;"><i class="fa fa-search" style="color: rgb(255,192,61);height: px;"></i></button></div>
+        <div
+            class="container" style="display: flex;flex-direction: column;padding: 0;margin: 60px 0 60px 0;">
+            <div id="special_reward">
+                <h4 class="text-black-50" style="margin-bottom: 20px;border-bottom: 2px solid rgba(127,127,127,0.24);padding: 10px;">Special Deals</h4>
+                <div>
+                    <div class="carousel slide carousel-multi-items" data-ride="carousel" id="reward_carousel" style="margin-bottom: 50px;display: flex;flex-direction: column;justify-content: center;align-items: center;height: 347px;" data-interval="false">
+                        <div class="carousel-inner" role="listbox" style="height: 334px !important;width: 90%;max-width: 900px !important;">
+                            <div class="carousel-item active" style="height: 100%;">
+                                <div class="row" style="height: 100%;padding: 10px;">
+                                    <div class="col d-xl-flex justify-content-xl-start align-items-xl-start col-md-4" style="display: flex;height: 100%;justify-content: center;cursor: pointer;">
+                                        <div class="card shadow-sm d-xl-flex mb-2" id="reward_1" style="height: 100%;display: flex;justify-content: center;align-items: center;border: none;padding: 10px;"><img class="card-img-top w-100 d-block" src="assets/img/reward1.png" style="border-radius: 0;height: 64%;object-fit: cover;border-bottom: 3px solid rgba(127,127,127,0.21);padding: 2px;">
+                                            <div class="card-body" style="padding: 7px;height: 18%;margin-top: 2%;align-self: start;">
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 16px;text-overflow: ellipsis;width: 200px;overflow: hidden;">3x Basic Health Screening (Get 1 Free)</h5>
+                                                <h5 class="text-dark" style="font-weight: 500;font-size: 14px;"></h5>
+                                                <h5 class="text-black-50" style="text-decoration: none;font-weight: 500;font-size: 13px;margin-bottom: 2px;"><i class="fa fa-star" style="color: rgb(255,192,61);"></i>&nbsp;Valid until 21 December 2019</h5>
+                                                <div style="display: inline-flex;width: 100%;height: 16px;padding: 0;">
+                                                    <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 15px;width: 100%;margin: 0 0 0 0;color: rgb(0,0,0);">RM 504.00</h5>
+                                                </div>
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 13px;width: 100%;margin: 0 0 0 0;color: rgb(175,179,183)!important;"><span style="text-decoration: line-through;">RM 672.00</span></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col d-xl-flex justify-content-xl-start align-items-xl-start col-md-4" style="display: flex;height: 100%;justify-content: center;">
+                                        <div class="card shadow-sm d-xl-flex mb-2" id="reward_2" style="height: 100%;display: flex;justify-content: center;align-items: center;border: none;padding: 10px;"><img class="card-img-top w-100 d-block" src="assets/img/reward1.png" style="border-radius: 0;height: 64%;object-fit: cover;border-bottom: 3px solid rgba(127,127,127,0.21);padding: 2px;">
+                                            <div class="card-body" style="padding: 7px;height: 18%;margin-top: 2%;align-self: start;">
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 16px;text-overflow: ellipsis;width: 200px;overflow: hidden;">3x Basic Health Screening (Get 1 Free)<br></h5>
+                                                <h5 class="text-black-50" style="text-decoration: none;font-weight: 500;font-size: 13px;margin-bottom: 2px;"><i class="fa fa-star" style="color: rgb(255,192,61);"></i>&nbsp;Valid until 21 December 2019</h5>
+                                                <div style="display: inline-flex;width: 100%;height: 16px;padding: 0;">
+                                                    <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 15px;width: 100%;margin: 0 0 0 0;color: rgb(0,0,0);">RM 504.00</h5>
+                                                </div>
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 13px;width: 100%;margin: 0 0 0 0;color: rgb(175,179,183)!important;"><span style="text-decoration: line-through;">RM 672.00</span></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col d-xl-flex justify-content-xl-start align-items-xl-start col-md-4" style="display: flex;height: 100%;justify-content: center;">
+                                        <div class="card shadow-sm d-xl-flex mb-2" id="reward_3" style="height: 100%;display: flex;justify-content: center;align-items: center;border: none;padding: 10px;"><img class="card-img-top w-100 d-block" src="assets/img/reward1.png" style="border-radius: 0;height: 64%;object-fit: cover;border-bottom: 3px solid rgba(127,127,127,0.21);padding: 2px;">
+                                            <div class="card-body" style="padding: 7px;height: 18%;margin-top: 2%;align-self: start;">
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 16px;text-overflow: ellipsis;width: 200px;overflow: hidden;">3x Basic Health Screening (Get 1 Free)<br></h5>
+                                                <h5 class="text-black-50" style="text-decoration: none;font-weight: 500;font-size: 13px;margin-bottom: 2px;"><i class="fa fa-star" style="color: rgb(255,192,61);"></i>&nbsp;Valid until 21 December 2019</h5>
+                                                <div style="display: inline-flex;width: 100%;height: 16px;padding: 0;">
+                                                    <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 15px;width: 100%;margin: 0 0 0 0;color: rgb(0,0,0);">RM 504.00</h5>
+                                                </div>
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 13px;width: 100%;margin: 0 0 0 0;color: rgb(175,179,183)!important;"><span style="text-decoration: line-through;">RM 672.00</span></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height: 100%;">
+                                <div class="row" style="height: 100%;padding: 10px;">
+                                    <div class="col d-xl-flex justify-content-xl-start align-items-xl-start col-md-4" style="display: flex;height: 100%;justify-content: center;">
+                                        <div class="card shadow-sm d-xl-flex mb-2" id="reward_4" style="height: 100%;display: flex;justify-content: center;align-items: center;border: none;padding: 10px;"><img class="card-img-top w-100 d-block" src="assets/img/reward1.png" style="border-radius: 0;height: 64%;object-fit: cover;border-bottom: 3px solid rgba(127,127,127,0.21);padding: 2px;">
+                                            <div class="card-body" style="padding: 7px;height: 18%;margin-top: 2%;align-self: start;">
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 16px;text-overflow: ellipsis;width: 200px;overflow: hidden;">3x Basic Health Screening (Get 1 Free)<br></h5>
+                                                <h5 class="text-black-50" style="text-decoration: none;font-weight: 500;font-size: 13px;margin-bottom: 2px;"><i class="fa fa-star" style="color: rgb(255,192,61);"></i>&nbsp;Valid until 21 December 2019</h5>
+                                                <div style="display: inline-flex;width: 100%;height: 16px;padding: 0;">
+                                                    <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 15px;width: 100%;margin: 0 0 0 0;color: rgb(0,0,0);">RM 504.00</h5>
+                                                </div>
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 13px;width: 100%;margin: 0 0 0 0;color: rgb(175,179,183)!important;"><span style="text-decoration: line-through;">RM 672.00</span></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col d-xl-flex justify-content-xl-start align-items-xl-start col-md-4" style="display: flex;height: 100%;justify-content: center;">
+                                        <div class="card shadow-sm d-xl-flex mb-2" id="reward_5" style="height: 100%;display: flex;justify-content: center;align-items: center;border: none;padding: 10px;"><img class="card-img-top w-100 d-block" src="assets/img/reward1.png" style="border-radius: 0;height: 64%;object-fit: cover;border-bottom: 3px solid rgba(127,127,127,0.21);padding: 2px;">
+                                            <div class="card-body" style="padding: 7px;height: 18%;margin-top: 2%;align-self: start;">
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 16px;text-overflow: ellipsis;width: 200px;overflow: hidden;">3x Basic Health Screening (Get 1 Free)<br></h5>
+                                                <h5 class="text-black-50" style="text-decoration: none;font-weight: 500;font-size: 13px;margin-bottom: 2px;"><i class="fa fa-star" style="color: rgb(255,192,61);"></i>&nbsp;Valid until 21 December 2019</h5>
+                                                <div style="display: inline-flex;width: 100%;height: 16px;padding: 0;">
+                                                    <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 15px;width: 100%;margin: 0 0 0 0;color: rgb(0,0,0);">RM 504.00</h5>
+                                                </div>
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 13px;width: 100%;margin: 0 0 0 0;color: rgb(175,179,183)!important;"><span style="text-decoration: line-through;">RM 672.00</span></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col d-xl-flex justify-content-xl-start align-items-xl-start col-md-4" style="display: flex;height: 100%;justify-content: center;">
+                                        <div class="card shadow-sm d-xl-flex mb-2" id="reward_6" style="height: 100%;display: flex;justify-content: center;align-items: center;border: none;padding: 10px;"><img class="card-img-top w-100 d-block" src="assets/img/reward1.png" style="border-radius: 0;height: 64%;object-fit: cover;border-bottom: 3px solid rgba(127,127,127,0.21);padding: 2px;">
+                                            <div class="card-body" style="padding: 7px;height: 18%;margin-top: 2%;align-self: start;">
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 16px;text-overflow: ellipsis;width: 200px;overflow: hidden;">3x Basic Health Screening (Get 1 Free)<br></h5>
+                                                <h5 class="text-black-50" style="text-decoration: none;font-weight: 500;font-size: 13px;margin-bottom: 2px;"><i class="fa fa-star" style="color: rgb(255,192,61);"></i>&nbsp;Valid until 21 December 2019</h5>
+                                                <div style="display: inline-flex;width: 100%;height: 16px;padding: 0;">
+                                                    <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 15px;width: 100%;margin: 0 0 0 0;color: rgb(0,0,0);">RM 504.00</h5>
+                                                </div>
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 13px;width: 100%;margin: 0 0 0 0;color: rgb(175,179,183)!important;"><span style="text-decoration: line-through;">RM 672.00</span></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="controls-top" style="width: 100%;"><a class="carousel-control-prev" href="#reward_carousel" role="button" data-slide="prev" style="width: 50px;"><span class="carousel-control-prev-icon d-xl-flex justify-content-xl-center align-items-xl-center" style="display: flex;justify-content: center;align-items: center;"><i class="fa fa-chevron-left"></i></span><span class="sr-only">Previous</span></a>
+                            <a
+                                class="carousel-control-next" href="#reward_carousel" role="button" data-slide="next"><span class="carousel-control-next-icon" style="display: flex;justify-content: center;align-items: center;"><i class="fa fa-chevron-right"></i></span><span class="sr-only">Next</span></a>
+                        </div>
+                        <ol class="carousel-indicators" style="display: none;">
+                            <li data-target="#reward_carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#reward_carousel" data-slide-to="1"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div id="recommended_reward">
+                <h4 class="text-black-50" style="margin-bottom: 20px;border-bottom: 2px solid rgba(127,127,127,0.24);padding: 10px;">Recommended for You</h4>
+                <div>
+                    <div class="carousel slide carousel-multi-items" data-ride="carousel" id="reward_carousel" style="margin-bottom: 50px;display: flex;flex-direction: column;justify-content: center;align-items: center;height: 347px;" data-interval="false">
+                        <div class="carousel-inner" role="listbox" style="height: 334px !important;width: 90%;max-width: 900px !important;">
+                            <div class="carousel-item active" style="height: 100%;">
+                                <div class="row" style="height: 100%;padding: 10px;">
+                                    <div class="col d-xl-flex justify-content-xl-start align-items-xl-start col-md-4" style="display: flex;height: 100%;justify-content: center;cursor: pointer;">
+                                        <div class="card shadow-sm d-xl-flex mb-2" id="reward_1" style="height: 100%;display: flex;justify-content: center;align-items: center;border: none;padding: 10px;"><img class="card-img-top w-100 d-block" src="assets/img/reward1.png" style="border-radius: 0;height: 64%;object-fit: cover;border-bottom: 3px solid rgba(127,127,127,0.21);padding: 2px;">
+                                            <div class="card-body" style="padding: 7px;height: 18%;margin-top: 2%;align-self: start;">
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 16px;text-overflow: ellipsis;width: 200px;overflow: hidden;">3x Basic Health Screening (Get 1 Free)</h5>
+                                                <h5 class="text-dark" style="font-weight: 500;font-size: 14px;"></h5>
+                                                <h5 class="text-black-50" style="text-decoration: none;font-weight: 500;font-size: 13px;margin-bottom: 2px;"><i class="fa fa-star" style="color: rgb(255,192,61);"></i>&nbsp;Valid until 21 December 2019</h5>
+                                                <div style="display: inline-flex;width: 100%;height: 16px;padding: 0;">
+                                                    <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 15px;width: 100%;margin: 0 0 0 0;color: rgb(0,0,0);">RM 504.00</h5>
+                                                </div>
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 13px;width: 100%;margin: 0 0 0 0;color: rgb(175,179,183)!important;"><span style="text-decoration: line-through;">RM 672.00</span></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col d-xl-flex justify-content-xl-start align-items-xl-start col-md-4" style="display: flex;height: 100%;justify-content: center;">
+                                        <div class="card shadow-sm d-xl-flex mb-2" id="reward_2" style="height: 100%;display: flex;justify-content: center;align-items: center;border: none;padding: 10px;"><img class="card-img-top w-100 d-block" src="assets/img/reward1.png" style="border-radius: 0;height: 64%;object-fit: cover;border-bottom: 3px solid rgba(127,127,127,0.21);padding: 2px;">
+                                            <div class="card-body" style="padding: 7px;height: 18%;margin-top: 2%;align-self: start;">
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 16px;text-overflow: ellipsis;width: 200px;overflow: hidden;">3x Basic Health Screening (Get 1 Free)<br></h5>
+                                                <h5 class="text-black-50" style="text-decoration: none;font-weight: 500;font-size: 13px;margin-bottom: 2px;"><i class="fa fa-star" style="color: rgb(255,192,61);"></i>&nbsp;Valid until 21 December 2019</h5>
+                                                <div style="display: inline-flex;width: 100%;height: 16px;padding: 0;">
+                                                    <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 15px;width: 100%;margin: 0 0 0 0;color: rgb(0,0,0);">RM 504.00</h5>
+                                                </div>
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 13px;width: 100%;margin: 0 0 0 0;color: rgb(175,179,183)!important;"><span style="text-decoration: line-through;">RM 672.00</span></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col d-xl-flex justify-content-xl-start align-items-xl-start col-md-4" style="display: flex;height: 100%;justify-content: center;">
+                                        <div class="card shadow-sm d-xl-flex mb-2" id="reward_3" style="height: 100%;display: flex;justify-content: center;align-items: center;border: none;padding: 10px;"><img class="card-img-top w-100 d-block" src="assets/img/reward1.png" style="border-radius: 0;height: 64%;object-fit: cover;border-bottom: 3px solid rgba(127,127,127,0.21);padding: 2px;">
+                                            <div class="card-body" style="padding: 7px;height: 18%;margin-top: 2%;align-self: start;">
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 16px;text-overflow: ellipsis;width: 200px;overflow: hidden;">3x Basic Health Screening (Get 1 Free)<br></h5>
+                                                <h5 class="text-black-50" style="text-decoration: none;font-weight: 500;font-size: 13px;margin-bottom: 2px;"><i class="fa fa-star" style="color: rgb(255,192,61);"></i>&nbsp;Valid until 21 December 2019</h5>
+                                                <div style="display: inline-flex;width: 100%;height: 16px;padding: 0;">
+                                                    <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 15px;width: 100%;margin: 0 0 0 0;color: rgb(0,0,0);">RM 504.00</h5>
+                                                </div>
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 13px;width: 100%;margin: 0 0 0 0;color: rgb(175,179,183)!important;"><span style="text-decoration: line-through;">RM 672.00</span></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height: 100%;">
+                                <div class="row" style="height: 100%;padding: 10px;">
+                                    <div class="col d-xl-flex justify-content-xl-start align-items-xl-start col-md-4" style="display: flex;height: 100%;justify-content: center;">
+                                        <div class="card shadow-sm d-xl-flex mb-2" id="reward_4" style="height: 100%;display: flex;justify-content: center;align-items: center;border: none;padding: 10px;"><img class="card-img-top w-100 d-block" src="assets/img/reward1.png" style="border-radius: 0;height: 64%;object-fit: cover;border-bottom: 3px solid rgba(127,127,127,0.21);padding: 2px;">
+                                            <div class="card-body" style="padding: 7px;height: 18%;margin-top: 2%;align-self: start;">
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 16px;text-overflow: ellipsis;width: 200px;overflow: hidden;">3x Basic Health Screening (Get 1 Free)<br></h5>
+                                                <h5 class="text-black-50" style="text-decoration: none;font-weight: 500;font-size: 13px;margin-bottom: 2px;"><i class="fa fa-star" style="color: rgb(255,192,61);"></i>&nbsp;Valid until 21 December 2019</h5>
+                                                <div style="display: inline-flex;width: 100%;height: 16px;padding: 0;">
+                                                    <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 15px;width: 100%;margin: 0 0 0 0;color: rgb(0,0,0);">RM 504.00</h5>
+                                                </div>
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 13px;width: 100%;margin: 0 0 0 0;color: rgb(175,179,183)!important;"><span style="text-decoration: line-through;">RM 672.00</span></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col d-xl-flex justify-content-xl-start align-items-xl-start col-md-4" style="display: flex;height: 100%;justify-content: center;">
+                                        <div class="card shadow-sm d-xl-flex mb-2" id="reward_5" style="height: 100%;display: flex;justify-content: center;align-items: center;border: none;padding: 10px;"><img class="card-img-top w-100 d-block" src="assets/img/reward1.png" style="border-radius: 0;height: 64%;object-fit: cover;border-bottom: 3px solid rgba(127,127,127,0.21);padding: 2px;">
+                                            <div class="card-body" style="padding: 7px;height: 18%;margin-top: 2%;align-self: start;">
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 16px;text-overflow: ellipsis;width: 200px;overflow: hidden;">3x Basic Health Screening (Get 1 Free)<br></h5>
+                                                <h5 class="text-black-50" style="text-decoration: none;font-weight: 500;font-size: 13px;margin-bottom: 2px;"><i class="fa fa-star" style="color: rgb(255,192,61);"></i>&nbsp;Valid until 21 December 2019</h5>
+                                                <div style="display: inline-flex;width: 100%;height: 16px;padding: 0;">
+                                                    <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 15px;width: 100%;margin: 0 0 0 0;color: rgb(0,0,0);">RM 504.00</h5>
+                                                </div>
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 13px;width: 100%;margin: 0 0 0 0;color: rgb(175,179,183)!important;"><span style="text-decoration: line-through;">RM 672.00</span></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col d-xl-flex justify-content-xl-start align-items-xl-start col-md-4" style="display: flex;height: 100%;justify-content: center;">
+                                        <div class="card shadow-sm d-xl-flex mb-2" id="reward_6" style="height: 100%;display: flex;justify-content: center;align-items: center;border: none;padding: 10px;"><img class="card-img-top w-100 d-block" src="assets/img/reward1.png" style="border-radius: 0;height: 64%;object-fit: cover;border-bottom: 3px solid rgba(127,127,127,0.21);padding: 2px;">
+                                            <div class="card-body" style="padding: 7px;height: 18%;margin-top: 2%;align-self: start;">
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 16px;text-overflow: ellipsis;width: 200px;overflow: hidden;">3x Basic Health Screening (Get 1 Free)<br></h5>
+                                                <h5 class="text-black-50" style="text-decoration: none;font-weight: 500;font-size: 13px;margin-bottom: 2px;"><i class="fa fa-star" style="color: rgb(255,192,61);"></i>&nbsp;Valid until 21 December 2019</h5>
+                                                <div style="display: inline-flex;width: 100%;height: 16px;padding: 0;">
+                                                    <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 15px;width: 100%;margin: 0 0 0 0;color: rgb(0,0,0);">RM 504.00</h5>
+                                                </div>
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 13px;width: 100%;margin: 0 0 0 0;color: rgb(175,179,183)!important;"><span style="text-decoration: line-through;">RM 672.00</span></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="controls-top" style="width: 100%;"><a class="carousel-control-prev" href="#reward_carousel" role="button" data-slide="prev" style="width: 50px;"><span class="carousel-control-prev-icon d-xl-flex justify-content-xl-center align-items-xl-center" style="display: flex;justify-content: center;align-items: center;"><i class="fa fa-chevron-left"></i></span><span class="sr-only">Previous</span></a>
+                            <a
+                                class="carousel-control-next" href="#reward_carousel" role="button" data-slide="next"><span class="carousel-control-next-icon" style="display: flex;justify-content: center;align-items: center;"><i class="fa fa-chevron-right"></i></span><span class="sr-only">Next</span></a>
+                        </div>
+                        <ol class="carousel-indicators" style="display: none;">
+                            <li data-target="#reward_carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#reward_carousel" data-slide-to="1"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div id="limited_reward">
+                <h4 class="text-black-50" style="margin-bottom: 20px;border-bottom: 2px solid rgba(127,127,127,0.24);padding: 10px;">Limited Offers</h4>
+                <div>
+                    <div class="carousel slide carousel-multi-items" data-ride="carousel" id="reward_carousel" style="margin-bottom: 50px;display: flex;flex-direction: column;justify-content: center;align-items: center;height: 347px;" data-interval="false">
+                        <div class="carousel-inner" role="listbox" style="height: 334px !important;width: 90%;max-width: 900px !important;">
+                            <div class="carousel-item active" style="height: 100%;">
+                                <div class="row" style="height: 100%;padding: 10px;">
+                                    <div class="col d-xl-flex justify-content-xl-start align-items-xl-start col-md-4" style="display: flex;height: 100%;justify-content: center;cursor: pointer;">
+                                        <div class="card shadow-sm d-xl-flex mb-2" id="reward_1" style="height: 100%;display: flex;justify-content: center;align-items: center;border: none;padding: 10px;"><img class="card-img-top w-100 d-block" src="assets/img/reward1.png" style="border-radius: 0;height: 64%;object-fit: cover;border-bottom: 3px solid rgba(127,127,127,0.21);padding: 2px;">
+                                            <div class="card-body" style="padding: 7px;height: 18%;margin-top: 2%;align-self: start;">
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 16px;text-overflow: ellipsis;width: 200px;overflow: hidden;">3x Basic Health Screening (Get 1 Free)</h5>
+                                                <h5 class="text-dark" style="font-weight: 500;font-size: 14px;"></h5>
+                                                <h5 class="text-black-50" style="text-decoration: none;font-weight: 500;font-size: 13px;margin-bottom: 2px;"><i class="fa fa-star" style="color: rgb(255,192,61);"></i>&nbsp;Valid until 21 December 2019</h5>
+                                                <div style="display: inline-flex;width: 100%;height: 16px;padding: 0;">
+                                                    <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 15px;width: 100%;margin: 0 0 0 0;color: rgb(0,0,0);">RM 504.00</h5>
+                                                </div>
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 13px;width: 100%;margin: 0 0 0 0;color: rgb(175,179,183)!important;"><span style="text-decoration: line-through;">RM 672.00</span></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col d-xl-flex justify-content-xl-start align-items-xl-start col-md-4" style="display: flex;height: 100%;justify-content: center;">
+                                        <div class="card shadow-sm d-xl-flex mb-2" id="reward_2" style="height: 100%;display: flex;justify-content: center;align-items: center;border: none;padding: 10px;"><img class="card-img-top w-100 d-block" src="assets/img/reward1.png" style="border-radius: 0;height: 64%;object-fit: cover;border-bottom: 3px solid rgba(127,127,127,0.21);padding: 2px;">
+                                            <div class="card-body" style="padding: 7px;height: 18%;margin-top: 2%;align-self: start;">
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 16px;text-overflow: ellipsis;width: 200px;overflow: hidden;">3x Basic Health Screening (Get 1 Free)<br></h5>
+                                                <h5 class="text-black-50" style="text-decoration: none;font-weight: 500;font-size: 13px;margin-bottom: 2px;"><i class="fa fa-star" style="color: rgb(255,192,61);"></i>&nbsp;Valid until 21 December 2019</h5>
+                                                <div style="display: inline-flex;width: 100%;height: 16px;padding: 0;">
+                                                    <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 15px;width: 100%;margin: 0 0 0 0;color: rgb(0,0,0);">RM 504.00</h5>
+                                                </div>
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 13px;width: 100%;margin: 0 0 0 0;color: rgb(175,179,183)!important;"><span style="text-decoration: line-through;">RM 672.00</span></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col d-xl-flex justify-content-xl-start align-items-xl-start col-md-4" style="display: flex;height: 100%;justify-content: center;">
+                                        <div class="card shadow-sm d-xl-flex mb-2" id="reward_3" style="height: 100%;display: flex;justify-content: center;align-items: center;border: none;padding: 10px;"><img class="card-img-top w-100 d-block" src="assets/img/reward1.png" style="border-radius: 0;height: 64%;object-fit: cover;border-bottom: 3px solid rgba(127,127,127,0.21);padding: 2px;">
+                                            <div class="card-body" style="padding: 7px;height: 18%;margin-top: 2%;align-self: start;">
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 16px;text-overflow: ellipsis;width: 200px;overflow: hidden;">3x Basic Health Screening (Get 1 Free)<br></h5>
+                                                <h5 class="text-black-50" style="text-decoration: none;font-weight: 500;font-size: 13px;margin-bottom: 2px;"><i class="fa fa-star" style="color: rgb(255,192,61);"></i>&nbsp;Valid until 21 December 2019</h5>
+                                                <div style="display: inline-flex;width: 100%;height: 16px;padding: 0;">
+                                                    <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 15px;width: 100%;margin: 0 0 0 0;color: rgb(0,0,0);">RM 504.00</h5>
+                                                </div>
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 13px;width: 100%;margin: 0 0 0 0;color: rgb(175,179,183)!important;"><span style="text-decoration: line-through;">RM 672.00</span></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="height: 100%;">
+                                <div class="row" style="height: 100%;padding: 10px;">
+                                    <div class="col d-xl-flex justify-content-xl-start align-items-xl-start col-md-4" style="display: flex;height: 100%;justify-content: center;">
+                                        <div class="card shadow-sm d-xl-flex mb-2" id="reward_4" style="height: 100%;display: flex;justify-content: center;align-items: center;border: none;padding: 10px;"><img class="card-img-top w-100 d-block" src="assets/img/reward1.png" style="border-radius: 0;height: 64%;object-fit: cover;border-bottom: 3px solid rgba(127,127,127,0.21);padding: 2px;">
+                                            <div class="card-body" style="padding: 7px;height: 18%;margin-top: 2%;align-self: start;">
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 16px;text-overflow: ellipsis;width: 200px;overflow: hidden;">3x Basic Health Screening (Get 1 Free)<br></h5>
+                                                <h5 class="text-black-50" style="text-decoration: none;font-weight: 500;font-size: 13px;margin-bottom: 2px;"><i class="fa fa-star" style="color: rgb(255,192,61);"></i>&nbsp;Valid until 21 December 2019</h5>
+                                                <div style="display: inline-flex;width: 100%;height: 16px;padding: 0;">
+                                                    <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 15px;width: 100%;margin: 0 0 0 0;color: rgb(0,0,0);">RM 504.00</h5>
+                                                </div>
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 13px;width: 100%;margin: 0 0 0 0;color: rgb(175,179,183)!important;"><span style="text-decoration: line-through;">RM 672.00</span></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col d-xl-flex justify-content-xl-start align-items-xl-start col-md-4" style="display: flex;height: 100%;justify-content: center;">
+                                        <div class="card shadow-sm d-xl-flex mb-2" id="reward_5" style="height: 100%;display: flex;justify-content: center;align-items: center;border: none;padding: 10px;"><img class="card-img-top w-100 d-block" src="assets/img/reward1.png" style="border-radius: 0;height: 64%;object-fit: cover;border-bottom: 3px solid rgba(127,127,127,0.21);padding: 2px;">
+                                            <div class="card-body" style="padding: 7px;height: 18%;margin-top: 2%;align-self: start;">
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 16px;text-overflow: ellipsis;width: 200px;overflow: hidden;">3x Basic Health Screening (Get 1 Free)<br></h5>
+                                                <h5 class="text-black-50" style="text-decoration: none;font-weight: 500;font-size: 13px;margin-bottom: 2px;"><i class="fa fa-star" style="color: rgb(255,192,61);"></i>&nbsp;Valid until 21 December 2019</h5>
+                                                <div style="display: inline-flex;width: 100%;height: 16px;padding: 0;">
+                                                    <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 15px;width: 100%;margin: 0 0 0 0;color: rgb(0,0,0);">RM 504.00</h5>
+                                                </div>
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 13px;width: 100%;margin: 0 0 0 0;color: rgb(175,179,183)!important;"><span style="text-decoration: line-through;">RM 672.00</span></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col d-xl-flex justify-content-xl-start align-items-xl-start col-md-4" style="display: flex;height: 100%;justify-content: center;">
+                                        <div class="card shadow-sm d-xl-flex mb-2" id="reward_6" style="height: 100%;display: flex;justify-content: center;align-items: center;border: none;padding: 10px;"><img class="card-img-top w-100 d-block" src="assets/img/reward1.png" style="border-radius: 0;height: 64%;object-fit: cover;border-bottom: 3px solid rgba(127,127,127,0.21);padding: 2px;">
+                                            <div class="card-body" style="padding: 7px;height: 18%;margin-top: 2%;align-self: start;">
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 16px;text-overflow: ellipsis;width: 200px;overflow: hidden;">3x Basic Health Screening (Get 1 Free)<br></h5>
+                                                <h5 class="text-black-50" style="text-decoration: none;font-weight: 500;font-size: 13px;margin-bottom: 2px;"><i class="fa fa-star" style="color: rgb(255,192,61);"></i>&nbsp;Valid until 21 December 2019</h5>
+                                                <div style="display: inline-flex;width: 100%;height: 16px;padding: 0;">
+                                                    <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 15px;width: 100%;margin: 0 0 0 0;color: rgb(0,0,0);">RM 504.00</h5>
+                                                </div>
+                                                <h5 class="text-dark" style="text-decoration: none;font-weight: 500;font-size: 13px;width: 100%;margin: 0 0 0 0;color: rgb(175,179,183)!important;"><span style="text-decoration: line-through;">RM 672.00</span></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="controls-top" style="width: 100%;"><a class="carousel-control-prev" href="#reward_carousel" role="button" data-slide="prev" style="width: 50px;"><span class="carousel-control-prev-icon d-xl-flex justify-content-xl-center align-items-xl-center" style="display: flex;justify-content: center;align-items: center;"><i class="fa fa-chevron-left"></i></span><span class="sr-only">Previous</span></a>
+                            <a
+                                class="carousel-control-next" href="#reward_carousel" role="button" data-slide="next"><span class="carousel-control-next-icon" style="display: flex;justify-content: center;align-items: center;"><i class="fa fa-chevron-right"></i></span><span class="sr-only">Next</span></a>
+                        </div>
+                        <ol class="carousel-indicators" style="display: none;">
+                            <li data-target="#reward_carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#reward_carousel" data-slide-to="1"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    <section class="call-to-action text-white text-center" style="background-color: #FFC03D;border-color: rgba(255,255,255,0);">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="text-left mb-4" style="color: rgb(222,149,0);margin-right: 50px;">What News !</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-left"><a href="#" style="font-size: 25px;"><br>Click here for more news and reward<i class="fa fa-arrow-right"></i><br><br></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-dark" style="height: 505px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>MedD</h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <p class="company-name">Company MedD© 2019</p>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <ul></ul>
+                    <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
+                        <p style="width: 235px;"><span class="new-line-span">26, Jalan Resak</span> Skudai, Johor</p>
+                    </div>
+                    <div><i class="fa fa-phone footer-contacts-icon"></i>
+                        <p class="footer-center-info email text-left"> +60 999</p>
+                    </div>
+                    <div><i class="fa fa-envelope footer-contacts-icon"></i>
+                        <p> <a href="#" target="_blank">support@medd.com</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 item text">
+                    <h3>About Compay</h3>
+                    <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                </div>
+                <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+            </div>
+            <p class="copyright">MedD © 2019</p>
+        </div>
+    </footer>
+    <section class="call-to-action text-white text-center" style="background-color: #FFC03D;border-color: rgba(255,255,255,0);">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="text-left mb-4" style="color: rgb(222,149,0);margin-right: 50px;">Just for you!</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-left"><a href="reward.html" style="font-size: 25px;"><br>Click here for more latest rewards &nbsp;<i class="fa fa-arrow-right"></i><br><br></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-storage.js"></script>
+    <script src="assets/js/firebase_config.js"></script>
+    <script src="assets/js/delivery.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/login.js"></script>
+    <script src="assets/js/medic.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/profile.js"></script>
+    <script src="assets/js/reward.js"></script>
+</body>
+
+</html>

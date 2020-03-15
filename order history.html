@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Menu - MEDD</title>
+    <meta name="description" content="Your one stop medical experience">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Bold-BS4-Footer-Big-Logo-1.css">
+    <link rel="stylesheet" href="assets/css/Bold-BS4-Footer-Big-Logo.css">
+    <link rel="stylesheet" href="assets/css/button.css">
+    <link rel="stylesheet" href="assets/css/chatbox-1.css">
+    <link rel="stylesheet" href="assets/css/chatbox.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/dontdelete.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/orderhist.css">
+    <link rel="stylesheet" href="assets/css/Social-Icons.css">
+    <link rel="stylesheet" href="assets/css/style-1.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md sticky-top shadow" style="display: flex;align-items: center;justify-content: center;">
+        <div class="container" style="margin: 0px; padding-left: 50px; padding-right: 50px;">
+            <div href="menu.html"><img src="assets/img/meddhalf.png"><a class="navbar-brand" href="delivery.html">MedD</a></div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item d-md-flex align-items-md-center" role="presentation" style="border-left: 2px solid rgba(127,127,127,0.1);padding: 0 5px 0 5px;"><i class="fa fa-gift" style="font-size: 25px;color: rgb(255,192,61);"></i><a class="nav-link" style="cursor: pointer;font-size: 15px;" href="reward.html">&nbsp;Rewards</a></li>
+                        <li class="nav-item d-md-flex align-items-md-center"
+                            role="presentation" style="border-left: 2px solid rgba(127,127,127,0.1);padding: 0 5px 0 5px;"><i class="fa fa-shopping-cart" style="font-size: 25px;color: rgb(255,192,61);"></i><a class="nav-link d-md-flex align-items-md-center" style="cursor: pointer;font-size: 15px;" href="order%20history.html">&nbsp; Orders</a></li>
+                        <li
+                            class="nav-item d-md-flex align-items-md-center" role="presentation" style="border-left: 2px solid rgba(127,127,127,0.1);padding: 0 5px 0 5px;"><i class="fa fa-user" style="font-size: 25px;color: rgb(255,192,61);"></i><a class="nav-link" id="profile_name" style="cursor: pointer;font-size: 15px;" href="profile.html"></a></li>
+                            <li class="nav-item d-md-flex align-items-md-center"
+                                role="presentation" style="border-left: 2px solid rgba(127,127,127,0.1);padding: 0 5px 0 5px;"><a class="nav-link text-right float-left d-md-flex" id="logout_btn" style="cursor: pointer;font-size: 15px;" href="index.html">Log Out</a></li>
+                    </ul>
+                </div>
+            </div><button data-target="#navcol-1" data-toggle="collapse" class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button></div>
+    </nav>
+    <div class="container">
+        <h1>Order History</h1>
+        <p class="text-left" style="color: rgb(13,13,13);">Check your transaction efforlessly<br></p>
+    </div>
+    <div id="tabs">
+        <div class="container">
+            <div class="row">
+                <div class="col" id="tab">
+                    <div id="purchase-tab" class="all" style="width: auto;height: 53px;" data-toggle="collapse" data-target="#collapse-all"><span id="purchase-label">All</span></div>
+                </div>
+                <div class="col" id="tab">
+                    <div id="purchase-tab" class="to-pay" style="width: auto;height: 53px;" data-toggle="collapse" data-target="collapse-to-pay"><span id="purchase-label">To Pay</span></div>
+                </div>
+                <div class="col" id="tab">
+                    <div id="purchase-tab" style="width: auto;height: 53px;"><span id="purchase-label">To Ship</span></div>
+                </div>
+                <div class="col" id="tab">
+                    <div id="purchase-tab" style="width: auto;height: 53px;"><span id="purchase-label">To Received</span></div>
+                </div>
+                <div class="col" id="tab">
+                    <div id="purchase-tab" style="width: auto;height: 53px;"><span id="purchase-label">Completed</span></div>
+                </div>
+                <div class="col" id="tab">
+                    <div id="purchase-tab" style="width: auto;height: 53px;"><span id="purchase-label">Cancelled</span></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" id="srch-col">
+                    <div class="shadow-sm" style="display: flex;width: 90%;align-items: center;margin-bottom: 30px;justify-content: center;margin-top: 20px;"><input type="text" placeholder="Search..." style="width: 90%;padding-left: 10px;margin-right: 1.5%;border: none;border-right: 1.5px solid rgba(127,127,127,0.34);"><button class="btn btn-primary" id="search_button" type="button" style="background-color: #ffffff;display: inline-block;align-items: center;justify-content: center;border: none;"><i class="fa fa-search" style="color: rgb(255,192,61);height: px;"></i></button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" id="all-view" style="height: 600px;width: 100%;">
+                    <div id="purchase-list">
+                        <div id="checkout" style="width: 100%;">
+                            <div id="order-container" style="width: auto;">
+                                <div id="order-content-wrapper" style="width: 100%;">
+                                    <div id="order-content" style="width: 100%;height: 258px;">
+                                        <div id="order-content-container" style="width: 100%;height: 238px;">
+                                            <div id="order-content-header" style="width: 100%;height: 26px;">
+                                                <div id="status-wrapper" style="width: 100.92px;height: 24px;">
+                                                    <div id="drawer" style="width: 24px;"><i class="far fa-question-circle" style="width: 10px;height: 10px;"></i></div><span id="completed">Completed</span></div>
+                                                <div id="order-header-seller" style="width: 100%;">
+                                                    <div id="seller-avatar" style="width: 100%;">
+                                                        <div id="sell-name" style="width: auto;"><img id="sell-ava" src="https://cf.shopee.com.my/file/aa7aa6e9a17199b3bd73776b59e62103_tn" style="width: 24px;height: 24px;"><span id="seller-name">healthcare online shop</span></div>
+                                                        <div id="chat-button"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="item-list" style="width: 100%;">
+                                                <div id="content-item" style="width: 100%;">
+                                                    <div id="item-detail" style="width: 100%;">
+                                                        <div id="item-product" style="width: 100%;height: 100px;">
+                                                            <div id="item-image">
+                                                                <div id="img-wrapper" style="width: 100%;">
+                                                                    <div id="img-holder" style="width: 80px;height: 80px;"><img id="item-img" src="assets/img/blackmores.jpg" style="width: 80px;height: 80px;"></div>
+                                                                    <div id="item-detail-content">
+                                                                        <div id="item-name"><span id="item-names">(Healthcare product 1)</span>
+                                                                            <div id="item-qty" style="width: auto;"><span>X1</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="order-price-text" style="height: auto;width: auto;">
+                                                            <div id="ori-price"><span id="ori">RM18.90</span></div>
+                                                            <div id="dis-price"><span id="dis">RM18.60</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="content-item" style="width: 100%;">
+                                                    <div id="item-detail" style="width: 100%;">
+                                                        <div id="item-product" style="width: 100%;height: 100px;">
+                                                            <div id="item-image">
+                                                                <div id="img-wrapper" style="width: 100%;">
+                                                                    <div id="img-holder" style="width: 80px;height: 80px;"><img id="item-img" src="assets/img/calmag.jpg" style="width: 80px;height: 80px;"></div>
+                                                                    <div id="item-detail-content">
+                                                                        <div id="item-name"><span id="item-names">(Healthcare product 2)</span>
+                                                                            <div id="item-qty" style="width: auto;"><span>X1</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="order-price-text" style="height: auto;width: auto;">
+                                                            <div id="ori-price"><span id="ori">RM18.90</span></div>
+                                                            <div id="dis-price"><span id="dis">RM18.60</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="order-price-container">
+                                    <div id="order-price-wrapper" style="width: 100%;">
+                                        <div id="order-total" style="width: 100%;">
+                                            <div id="totals" style="width: 100%;"><i class="icon ion-social-angular" style="width: 22px;height: 22px;"></i><span id="label-price">Order Total:&nbsp;</span><span id="total">RM37.00</span></div>
+                                        </div>
+                                        <div id="order-detail-container" style="width: 100%;height: 78px;">
+                                            <div id="text-info" style="width: 100%;height: 40px;"><span id="rate" style="width: 100%;">No rating received</span></div>
+                                            <div id="order-detail-wrapper" style="width: 100%;"><button class="btn btn-primary" id="order-detail-button" type="button" style="width: 160px;height: 40px;"><span id="button-content" style="width: 111.91px;">View Order Details</span></button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="order-container" style="width: auto;">
+                                <div id="order-content-wrapper" style="width: 100%;">
+                                    <div id="order-content" style="width: 100%;height: 258px;">
+                                        <div id="order-content-container" style="width: 100%;height: 238px;">
+                                            <div id="order-content-header" style="width: 100%;height: 26px;">
+                                                <div id="status-wrapper" style="width: 100.92px;height: 24px;">
+                                                    <div id="drawer" style="width: 24px;"><i class="far fa-question-circle" style="width: 10px;height: 10px;"></i></div><span id="completed">Completed</span></div>
+                                                <div id="order-header-seller" style="width: 100%;">
+                                                    <div id="seller-avatar" style="width: 100%;">
+                                                        <div id="sell-name" style="width: auto;"><img id="sell-ava" src="https://cf.shopee.com.my/file/aa7aa6e9a17199b3bd73776b59e62103_tn" style="width: 24px;height: 24px;"><span id="seller-name">healthcare online shop</span></div>
+                                                        <div id="chat-button"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="item-list" style="width: 100%;">
+                                                <div id="content-item" style="width: 100%;">
+                                                    <div id="item-detail" style="width: 100%;">
+                                                        <div id="item-product" style="width: 100%;height: 100px;">
+                                                            <div id="item-image">
+                                                                <div id="img-wrapper" style="width: 100%;">
+                                                                    <div id="img-holder" style="width: 80px;height: 80px;"><img id="item-img" src="assets/img/blackmores.jpg" style="width: 80px;height: 80px;"></div>
+                                                                    <div id="item-detail-content">
+                                                                        <div id="item-name"><span id="item-names">(Healthcare product 1)</span>
+                                                                            <div id="item-qty" style="width: auto;"><span>X1</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="order-price-text" style="height: auto;width: auto;">
+                                                            <div id="ori-price"><span id="ori">RM18.90</span></div>
+                                                            <div id="dis-price"><span id="dis">RM18.60</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="content-item" style="width: 100%;">
+                                                    <div id="item-detail" style="width: 100%;">
+                                                        <div id="item-product" style="width: 100%;height: 100px;">
+                                                            <div id="item-image">
+                                                                <div id="img-wrapper" style="width: 100%;">
+                                                                    <div id="img-holder" style="width: 80px;height: 80px;"><img id="item-img" src="assets/img/calmag.jpg" style="width: 80px;height: 80px;"></div>
+                                                                    <div id="item-detail-content">
+                                                                        <div id="item-name"><span id="item-names">(Healthcare product 2)</span>
+                                                                            <div id="item-qty" style="width: auto;"><span>X1</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="order-price-text" style="height: auto;width: auto;">
+                                                            <div id="ori-price"><span id="ori">RM18.90</span></div>
+                                                            <div id="dis-price"><span id="dis">RM18.60</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="order-price-container">
+                                    <div id="order-price-wrapper" style="width: 100%;">
+                                        <div id="order-total" style="width: 100%;">
+                                            <div id="totals" style="width: 100%;"><i class="icon ion-social-angular" style="width: 22px;height: 22px;"></i><span id="label-price">Order Total:&nbsp;</span><span id="total">RM37.00</span></div>
+                                        </div>
+                                        <div id="order-detail-container" style="width: 100%;height: 78px;">
+                                            <div id="text-info" style="width: 100%;height: 40px;"><span id="rate" style="width: 100%;">No rating received</span></div>
+                                            <div id="order-detail-wrapper" style="width: 100%;"><button class="btn btn-primary" id="order-detail-button" type="button" style="width: 160px;height: 40px;"><span id="button-content" style="width: 111.91px;">View Order Details</span></button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="call-to-action text-white text-center" style="background-color: #FFC03D;border-color: rgba(255,255,255,0);">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="text-left mb-4" style="color: rgb(222,149,0);margin-right: 50px;">Just for you!</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-left"><a href="reward.html" style="font-size: 25px;"><br>Click here for more latest rewards &nbsp;<i class="fa fa-arrow-right"></i><br><br></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="row">
+            <div class="col-sm-6 col-md-4 footer-navigation">
+                <h3><a href="#">MedD</a></h3>
+                <p class="links"><a href="#">Delivery</a><strong> · </strong><a href="#">In Sales</a><strong> · </strong><a href="#">Live Location</a><strong> · </strong><a href="#">Checkup Arrangement<br></a><strong>&nbsp;· </strong><a href="#">Contact Us<br></a></p>
+                <p
+                    class="company-name">Company MedD© 2019</p>
+            </div>
+            <div class="col-sm-6 col-md-4 footer-contacts">
+                <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
+                    <p><span class="new-line-span">26, Jalan Resak</span> Skudai, Johor</p>
+                </div>
+                <div><i class="fa fa-phone footer-contacts-icon"></i>
+                    <p class="footer-center-info email text-left"> +60 999</p>
+                </div>
+                <div><i class="fa fa-envelope footer-contacts-icon"></i>
+                    <p> <a href="#" target="_blank">support@medd.com</a></p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-4 footer-about">
+                <h4>About the company</h4>
+                <p> Your one stop healthcare experience</p>
+                <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-storage.js"></script>
+    <script src="assets/js/firebase_config.js"></script>
+    <script src="assets/js/delivery.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/login.js"></script>
+    <script src="assets/js/medic.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/profile.js"></script>
+    <script src="assets/js/reward.js"></script>
+</body>
+
+</html>

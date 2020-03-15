@@ -1,0 +1,30 @@
+.login-form .h1 {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+
+.bg-color {
+  background-color: rgba(0,0,0,0.84);
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.input-group.mb-3 {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.login-form .p-0 {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.login-form .btn-btn primary {
+  text-align: center;
+}
+
