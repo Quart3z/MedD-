@@ -1,10 +1,9 @@
 # MedD-
 Your one stop healthcare experience
 
-link:
-http://gmm-student.fc.utm.my/~lyw/MedD/index.html
+<a href='http://gmm-student.fc.utm.my/~lyw/MedD/index.html'> Link to website </a>
 
-Developed by: <br/>
-Looi Yao Wei - Project Leader <br/>
-Steven Yong Wei - Front-End Developer <br/>
-Siti Nurazalina binti Suparto - Front-End Developer <br/>
+Developed by: 
+  - Looi Yao Wei - Project Leader 
+  - Steven Yong Wei - Front-End Developer 
+  - Siti Nurazalina binti Suparto - Front-End Developer
